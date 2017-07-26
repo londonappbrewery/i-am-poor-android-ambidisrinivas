@@ -17,40 +17,40 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentStart="false"
         android:layout_below="@+id/title"
-        android:layout_marginTop="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:adjustViewBounds="false"
         android:contentDescription=""
         android:visibility="visible"
         app:srcCompat="@drawable/coal"
-        tools:ignore="@drawable/coal,ContentDescription,UnusedAttribute"/>
+        tools:ignore="ContentDescription"/>
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:elevation="0dp"
         android:text="@string/title"
-        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/black"
         android:visibility="visible"
-        tools:elevation="0dp"
-        tools:ignore="UnusedAttribute"
         tools:text="I Am Poor"
         tools:textSize="50sp"/>
 
     <TextView
-        android:id="@+id/quote"
+        android:id="@+id/quot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/imageView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginBottom="16dp"
         android:text="@string/quote"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:visibility="visible"
+        tools:ignore="RtlHardcoded"
         tools:textSize="40sp"/>
 
 </RelativeLayout>
